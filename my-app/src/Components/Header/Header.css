@@ -1,0 +1,74 @@
+.mainHeader {
+    width: 100%;
+    height: 70px;
+    background-color: #123456;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HeaderHold {
+    width: 85%;
+    height: 100%;
+    /* background-color: aqua;  */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NavsDiv{
+    width: 300px;
+    /* background-color: yellowgreen; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navigations {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: all 350ms;
+}
+
+.Navigations:hover {
+    color: skyblue;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.Navigations span {
+    margin-left: 6px;
+    font-weight: 600;
+}
+
+.LogoDiv {
+    font-family: jokerman;
+    font-weight: 600;
+    font-size: 22px;
+    color: lightblue;
+}
+
+.BurgerIconHold {
+    display: none;
+}
+
+.BuggerContentHold {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .BurgerIconHold {
+        display: block;
+    }
+
+    .NavsDiv {
+        display: none;
+    }
+
+    .BuggerContentHold {
+        display: block;
+    }
+}
